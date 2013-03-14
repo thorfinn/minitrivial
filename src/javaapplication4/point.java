@@ -9,5 +9,5 @@ package javaapplication4;
  * @author alumno
  */
 class point {
-    
+   int i; 
 }
