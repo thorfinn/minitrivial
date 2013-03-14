@@ -6,6 +6,8 @@ package javaapplication4;
 
 import java.awt.Point;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,11 +15,23 @@ import java.awt.event.KeyEvent;
  */
 public class NewJFrame extends javax.swing.JFrame {
 
+    List<Pregunta> preguntas=new ArrayList<Pregunta>();
+    
     /**
      * Creates new form NewJFrame
      */
     public NewJFrame() {
         initComponents();
+        
+        Pregunta pregunta1=new Pregunta();
+        pregunta1.setPregunta(null);
+        pregunta1.setRespuesta(null);
+        
+        preguntas.add(pregunta1);
+        
+        
+        Pregunta pregunta=preguntas.get(3);
+        
     }
 
     /**
